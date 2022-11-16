@@ -22,7 +22,7 @@ func imageKey(dgst digest.Digest) string {
 }
 
 // imageStoreWithLease wraps the configured image store with one that deletes the lease
-// reigstered for a given image ID, if one exists
+// registered for a given image ID, if one exists
 //
 // This is used by the main image service to wrap delete calls to the real image store.
 type imageStoreWithLease struct {
